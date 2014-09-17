@@ -6,10 +6,13 @@ details are explained in
 https://jira.freeswitch.org/browse/FS-6746
 (the issue describes a Perl prototype)
 
-Requirement: Golang 1.3 or higher.
+Also http://voxserv.ch/ describes the whole concept of the virtual secretary
+
 
 Installing
 ----------
+
+Requirement: Golang 1.3 or higher.
 
 go get github.com/fiorix/go-eventsocket/eventsocket
 
