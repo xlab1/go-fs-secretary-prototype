@@ -1,0 +1,30 @@
+<include>
+  <domain name="test01.voxserv.net">
+    <params>
+      <param name="dial-string" value="{^^:sip_invite_domain=${dialed_domain}:presence_id=${dialed_user}@${dialed_domain}}${sofia_contact(*/${dialed_user}@${dialed_domain})}"/>
+    </params>
+
+    <variables>
+      <variable name="user_context" value="public"/>
+    </variables>
+
+    <groups>
+      <group name="test01">
+        <users>
+          
+          <user id="720">
+            <params>
+              <param name="a1-hash" value="4b1ed5ce75a4d592619213654a5e6b04"/>
+            </params>
+            <variables>
+              <variable name="ring_timeout" value="60"/>              
+            </variables>
+          </user>
+          
+        </users>
+        
+      </group>
+    </groups>
+    
+  </domain>
+</include>          
